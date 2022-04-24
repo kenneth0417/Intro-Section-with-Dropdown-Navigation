@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__left">
+        <img src="./images/logo.svg" alt="logo" class="header__left__logo" />
+        <ul class="header__left__list">
+          <li class="header__left__items features">
+            <span>Features</span><img
+              src="./images/icon-arrow-down.svg"
+              class="header__left__icons"
+            /><img
+              src="./images/icon-arrow-up.svg"
+              class="header__left__icons header__left__icons--hide"
+            />
+
+            <div class="features__popup features__popup--hide">
+              <ul class="features__popup__list">
+                <li class="features__popup__items">
+                  <div class="features__popup__image">
+                    <img src="./images/icon-todo.svg" />
+                  </div>
+
+                  <span>Todo List</span>
+                </li>
+                <li class="features__popup__items">
+                  <div class="features__popup__image">
+                    <img src="./images/icon-calendar.svg" />
+                  </div>
+                  <span>Calendar</span>
+                </li>
+                <li class="features__popup__items">
+                  <div class="features__popup__image">
+                    <img src="./images/icon-reminders.svg" />
+                  </div>
+                  <span>Reminders</span>
+                </li>
+                <li class="features__popup__items">
+                  <div class="features__popup__image">
+                    <img src="./images/icon-planning.svg" />
+                  </div>
+                  <span>Planning</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="header__left__items company">
+            <span>Company</span><img
+              src="./images/icon-arrow-down.svg"
+              class="header__left__icons"
+            /><img
+              src="./images/icon-arrow-up.svg"
+              class="header__left__icons header__left__icons--hide"
+            />
+
+            <div class="company__popup company__popup--hide">
+              <ul class="company__popup__list">
+                <li class="company__popup__item"><span>History</span>></li>
+                <li class="company__popup__item"><span>Our Team</span></li>
+                <li class="company__popup__item"><span>Blog</span></li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__left__items"><span>Careers</span></li>
+          <li class="header__left__items"><span>About</span></li>
+        </ul>
+      </div>
+      <div class="header__right">
+        <button class="header__right__button header__right__button--login">
+          Login
+        </button>
+        <button class="header__right__button header__right__button--register">
+          Register
+        </button>
+      </div>
+      <div class="header__bars">
+        <img src="./images/icon-menu.svg" />
+      </div>
+    </header>
+
+    <div class="sidebar">
+      <div class="sidebar__close">
+        <img src="./images/icon-close-menu.svg" />
+      </div>
+      <div class="sidebar__list__wrapper">
+        <ul class="sidebar__list">
+          <li class="sidebar__items sidebar__features">
+            Features
+            <img
+              src="./images/icon-arrow-down.svg"
+              class="sidebar__icons"
+            /><img
+              src="./images/icon-arrow-up.svg"
+              class="sidebar__icons--hide"
+            />
+          </li>
+
+          <div class="sidebar__features__popup">
+            <ul class="sidebar__features__list">
+              <li class="sidebar__features__item">
+                <div class="features__popup__image">
+                  <img src="./images/icon-todo.svg" />
+                </div>
+                <span>Todo List</span>
+              </li>
+              <li class="sidebar__features__item">
+                <div class="features__popup__image">
+                  <img src="./images/icon-calendar.svg" />
+                </div>
+                <span>Calendar</span>
+              </li>
+              <li class="sidebar__features__item">
+                <div class="features__popup__image">
+                  <img src="./images/icon-reminders.svg" />
+                </div>
+                <span>Reminders</span>
+              </li class="sidebar__features__item">
+              <li class="sidebar__features__item">
+                <div class="features__popup__image">
+                  <img src="./images/icon-planning.svg" />
+                </div>
+                <span>Planning</span>
+              </li>
+            </ul>
+          </div>
+
+           <li class="sidebar__items sidebar__company">
+            Company
+            <img
+              src="./images/icon-arrow-down.svg"
+              class="sidebar__icons"
+            /><img
+              src="./images/icon-arrow-up.svg"
+              class="sidebar__icons--hide"
+            />
+          </li>
+
+          <div class="sidebar__company__popup">
+            <ul class="sidebar__company__list">
+              <li class="sidebar__company__item">History</li>
+              <li class="sidebar__company__item">Our Team</li>
+              <li class="sidebar__company__item">Blog</li>
+            </ul>
+          </div>
+
+          <li class="sidebar__items">
+            Careers
+          </li>
+          <li class="sidebar__items">
+            About
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <main class="content">
+      <div class="content__left">
+        <h1 class="content__left__title"><span>Make</span> remote work</h1>
+        <p class="content__left__subtitle">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="content__left__button">Learn more</button>
+        <div class="content__left__partners">
+          <img src="./images/client-databiz.svg" alt="databiz" />
+          <img src="./images/client-audiophile.svg" alt="audiophile" />
+          <img src="./images/client-meet.svg" alt="meet" />
+          <img src="./images/client-maker.svg" alt="maker" />
+        </div>
+      </div>
+      <div class="content__right">
+        <img
+          src="./images/image-hero-desktop.png"
+          class="content__right__desktop"
+        />
+        <img
+          src="./images/image-hero-mobile.png"
+          class="content__right__mobile content__right__mobile"
+        />
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Kenneth</a>.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+.header {
+    width: 100%;
+    height: 10rem;
+    padding: 2rem 4rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width:$bp-large) {
+        padding: 2rem;
+    }
+
+    @media screen and (max-width:$bp-small) {
+        align-items: flex-start;
+    }
+}
+
+.content {
+    height: 84rem;
+
+    @media screen and (max-width:$bp-large) {
+        height: 100%;
+    }
+}
+
+.features, .company {
+    position: relative;
+}
+
+.features__popup, .company__popup {
+    position: absolute;
+}
+
